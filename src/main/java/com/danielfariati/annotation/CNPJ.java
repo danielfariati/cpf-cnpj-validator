@@ -21,7 +21,7 @@ public @interface CNPJ {
 	String message() default "CNPJ inválido!";
 
 	/**
-	 * Indica a necessidade de informar um CPF (not null)
+	 * Indica a necessidade de informar um CNPJ (not null)
 	 * @default false
 	 */
 	boolean required() default false;
