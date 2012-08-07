@@ -21,7 +21,7 @@ public @interface CPF {
 	String message() default "CPF inválido!";
 
 	/**
-	 * Indica a necessidade de informar um CPF (not null)
+	 * Indica a necessidade de informar um CPF (not null / not empty)
 	 * @default false
 	 */
 	boolean required() default false;
