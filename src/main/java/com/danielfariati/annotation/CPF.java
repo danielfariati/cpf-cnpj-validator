@@ -14,11 +14,20 @@ import com.danielfariati.validator.CPFValidator;
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = CPFValidator.class)
 public @interface CPF {
+	/**
+	 * Indica a mensagem de erro a ser lançada
+	 * @default "CPF inválido!"
+	 */
 	String message() default "CPF inválido!";
 
-	boolean required();
+	/**
+	 * Indica a necessidade de informar um CPF (not null)
+	 * @default false
+	 */
+	boolean required() default false;
 
 	Class<?>[] groups() default {};
 
 	Class<? extends Payload>[] payload() default {};
+
 }

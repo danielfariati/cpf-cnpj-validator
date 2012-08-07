@@ -14,11 +14,20 @@ import com.danielfariati.validator.CNPJValidator;
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = CNPJValidator.class)
 public @interface CNPJ {
+	/**
+	 * Indica a mensagem de erro a ser lançada
+	 * @default "CNPJ inválido!"
+	 */
 	String message() default "CNPJ inválido!";
 
-	boolean required();
+	/**
+	 * Indica a necessidade de informar um CPF (not null)
+	 * @default false
+	 */
+	boolean required() default false;
 
 	Class<?>[] groups() default {};
 
 	Class<? extends Payload>[] payload() default {};
+
 }

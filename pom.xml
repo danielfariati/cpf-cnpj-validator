@@ -3,7 +3,7 @@
 	<groupId>com.danielfariati</groupId>
 	<artifactId>cpf-cnpj-validator</artifactId>
 	<name>cpf-cnpj-validator</name>
-	<version>1.0</version>
+	<version>1.1</version>
 	<description>bean validator for cnpj and cpf</description>
 
 	<parent>
